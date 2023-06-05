@@ -6,15 +6,18 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-     features = "src/test/resources/features",
+        plugin = {"html:target/cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"
+        },
+        features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@regression or @smoke",
+        tags = "@guru",
 
-        dryRun = false
+        dryRun = true
 )
 
-public class Runners {
-
+public class Runner {
     /*
         Cucumber'da Runner Class'i istedigimiz testleri calistirmak
         ve her calistirilan test icin rapor hazirlamak amaciyla kullanilir
@@ -72,5 +75,4 @@ public class Runners {
                 ve Testleri normal olarak calistirmamizi saglar
 
      */
-
 }

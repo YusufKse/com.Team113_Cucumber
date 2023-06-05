@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="35.389" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="US1004 Steplerde parametre kullanılabilmeli" name="TC08 Amazon Nutella Testi" time="20.9">
+<system-out><![CDATA[
+Given Kullanici "amazonUrl" anasayfaya gider................................passed
+When "Nutella" için arama yapar.............................................passed
+Then Arama sonuclarinin "Nutella" icerdigini test eder......................passed
+And 3 saniye bekler.........................................................passed
+And Sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 Steplerde parametre kullanılabilmeli" name="TC10 Amazon Samsung Testi" time="14.362">
+<system-out><![CDATA[
+Given Kullanici "amazonUrl" anasayfaya gider................................passed
+When "Samsung" için arama yapar.............................................passed
+Then Arama sonuclarinin "Samsung" icerdigini test eder......................passed
+And Sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
